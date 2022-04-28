@@ -60,6 +60,20 @@ public class OPP {
         System.out.println("Area Retangulo: " + qua.Area(ladoQuadrilatero,alturaQuadrilatero));
     }
     
+    public static void rev1(){
+        Scanner input = new Scanner(System.in);
+        Conversor conversor = new Conversor();
+        
+        System.out.println("Insira um numero para retornar um dia da semana: ");
+        int entrada = input.nextInt();
+        input.nextLine();
+        
+        System.out.println("Gostaria da data em ingles? (Y/N)");
+        char ingles = input.nextLine().charAt(0);
+        conversor.TrocarIdioma(ingles);
+        
+        System.out.println(conversor.Conversor(entrada));
+    }
     
     public static void main(String[] args) {
         
@@ -67,9 +81,8 @@ public class OPP {
         //ex2();
         //ex3();
         //ex4();
-        
-        
-                
+        rev1();
+                     
     }
     
 }
