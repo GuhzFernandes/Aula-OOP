@@ -49,6 +49,15 @@ public class OPP {
     
     public static void ex4(){
         
+        Quadrilatero qua = new Quadrilatero();
+        
+        double ladoQuadrado = 5;
+        double ladoQuadrilatero = 3;
+        double alturaQuadrilatero = 4;
+        
+        System.out.println("Area Quadreado: "+qua.Area(ladoQuadrado));
+        
+        System.out.println("Area Retangulo: " + qua.Area(ladoQuadrilatero,alturaQuadrilatero));
     }
     
     
@@ -57,7 +66,7 @@ public class OPP {
         //ex1();
         //ex2();
         //ex3();
-        
+        //ex4();
         
         
                 
