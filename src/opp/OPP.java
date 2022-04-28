@@ -75,14 +75,18 @@ public class OPP {
         System.out.println(conversor.Conversor(entrada));
     }
     
+    public static void rev2(){
+        
+    }
+    
     public static void main(String[] args) {
         
         //ex1();
         //ex2();
         //ex3();
         //ex4();
-        rev1();
-                     
+        //rev1();
+        rev2();           
     }
     
 }
