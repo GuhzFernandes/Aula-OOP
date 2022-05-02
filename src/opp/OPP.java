@@ -1,6 +1,8 @@
 package opp;
 import java.util.Scanner;
 import java.util.Set;
+import java.util.List;
+import java.util.ArrayList;
 
 public class OPP {
     
@@ -76,6 +78,26 @@ public class OPP {
     }
     
     public static void rev2(){
+        Scanner input = new Scanner(System.in);
+        List valores = new ArrayList();
+        char adicionarValor;
+        
+        System.out.println("Insira valores por linha para receber somatorio, produtorio, quantidade de numeros pares e impares: ");
+        do{
+            System.out.println("Insira um valor: ");
+            valores.add(input.nextDouble());
+            input.nextLine();
+            
+            System.out.println("Gostaria de Inserir mais algum valor? (Y/N)");
+            adicionarValor = input.nextLine().charAt(0);
+            input.nextLine();
+        }
+        while(adicionarValor == 'Y' || adicionarValor == 'y');
+        
+        double[] vetorValores = new double[valores.size()];
+        for(int i = 0; i < valores.size(); i++){
+            vetorValores[i] = valores.get(i);
+        }
         
     }
     
